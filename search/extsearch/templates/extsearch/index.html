@@ -1,0 +1,9 @@
+<form method="get" action="/extsearch/">
+<label for="q">Search:</label>
+           <input type="text" name="q" id="q" value="{{query_string}}"/>
+           <input type="submit" value="Submit"/>
+</form>
+
+Search results for "{{query_string}}":<br>
+
+{{search_results}}
