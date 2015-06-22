@@ -6,4 +6,8 @@
 
 Search results for "{{query_string}}":<br>
 
-{{search_results}}
+<ul>
+    {% for result in search_results %}
+        <li>[{{ result.id }}] {{ result.title }}</li>
+    {% endfor %}
+</ul>
