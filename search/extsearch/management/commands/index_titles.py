@@ -4,7 +4,7 @@ from elasticsearch import Elasticsearch
 from extsearch.models import Lesson
 
 class Command(BaseCommand):
-    help = 'Fetches Stepic lessons titles (via API) to local database'
+    help = 'Indexes fetched titles in local Elasticsearch'
 
     def handle(self, *args, **options):
         lessons = Lesson.objects.all()
