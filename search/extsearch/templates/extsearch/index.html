@@ -8,6 +8,8 @@ Search results for "{{query_string}}":<br>
 
 <ul>
     {% for result in search_results %}
-        <li>[{{ result.id }}] {{ result.title }}</li>
+        <li>
+            <a href="{{ result.href }}">[{{ result.id }}] {{ result.title }}</a>
+        </li>
     {% endfor %}
 </ul>
